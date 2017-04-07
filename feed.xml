@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-07T20:32:01+02:00</updated><id>http://localhost:4000/</id><title type="html">Runar Kristoffersen</title><subtitle>A work-in-progress portfolio for Runar Kristoffersen, electrician by trade, computer- and sciencegeek by desire.
+</subtitle><entry><title type="html">Keyboard remapping gone mad</title><link href="http://localhost:4000/hardware/2017/03/16/Key-modifications.html" rel="alternate" type="text/html" title="Keyboard remapping gone mad" /><published>2017-03-16T22:47:20+01:00</published><updated>2017-03-16T22:47:20+01:00</updated><id>http://localhost:4000/hardware/2017/03/16/Key-modifications</id><content type="html" xml:base="http://localhost:4000/hardware/2017/03/16/Key-modifications.html">&lt;p&gt;Remapping the keyboard is highly useful, especially if you find that there currently is not enough keys on your keyboard. Instead of slaving though remembering cumbersome key-combinations to get your work done, why not add some extra keys on your keyboard? Of course, we are not physically adding keys, but using the ones we have a bit smarter.&lt;/p&gt;
+
+&lt;p&gt;Like on your touch phone or pad, you can tap, hold, swipe as you navigate through the interface. Yet, you are only interacting with a single surface.&lt;/p&gt;
+
+&lt;p&gt;Our current keyboards have not evolved very much since their birth. Sure, you can get keys with tiny screens on them, or fancy light. But this doesn’t really help productivity much. What we need are multiple ways to interact with each key. Ergo, we need more ways to press a button.&lt;/p&gt;
+
+&lt;p&gt;Of course, we already press buttons in different ways. Some you hold and use in addition to other keys, some you only tap. Other keys, you hold and repeat. But currently, there is no keyboard that defaults to assign different keys depending on whether you tap or hold the key.&lt;/p&gt;
+
+&lt;p&gt;Steve Losh, wrote a great article, called &lt;a href=&quot;http://stevelosh.com/blog/2012/10/a-modern-space-cadet/&quot;&gt;A Modern Space Cadet&lt;/a&gt;, where he wrote about a smarter use of the keyboard. Even though the article is a few years old now, and the software he suggests to remap the keyboard is outdated, the article is well worth a read. I have taken great inspiration from the article.&lt;/p&gt;
+
+&lt;p class=&quot;float-right&quot;&gt;&lt;img src=&quot;https://imgs.xkcd.com/comics/borrow_your_laptop.png&quot; alt=&quot;XKCD: Borrow Your Laptop&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;caps-lock&quot;&gt;Caps-lock&lt;/h2&gt;
+
+&lt;p&gt;Caps-lock is arguably the most remapped key on the keyboard. It doesn’t do anything very useful. Unless you like to post angry comments on various news sites, you probably don’t use the key. If you find yourself to be on of those who do, you probably shouldn’t be using the internet. For everybody else, remap it to something else. I do it for the &lt;code class=&quot;highlighter-rouge&quot;&gt;Hyper&lt;/code&gt;-key. Well, that is on macOS, the &lt;code class=&quot;highlighter-rouge&quot;&gt;hyper&lt;/code&gt; key doesn’t exist, so I remapped it to &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-Cmd-Alt-Shift&lt;/code&gt;. So now I have more of the easily-hit key-combos than I can think of.&lt;/p&gt;
+
+&lt;h2 id=&quot;tap-keys-and-hold-keys&quot;&gt;Tap-keys and hold keys&lt;/h2&gt;
+
+&lt;p&gt;Some keys you use differently than others. You hold your modifier keys while you tap other keys. Why not double the usage of some of these keys?&lt;/p&gt;
+
+&lt;p&gt;Especially the modifier keys seem to be good candidates for using as tapping as well as their regular hold-behaviour.&lt;/p&gt;
+
+&lt;p&gt;We do however need a target key to remap to. It is not too important which key you choose to remap to, but it should be an unused key.&lt;/p&gt;
+
+&lt;p&gt;I don’t use my F-row too much, especially F12 and above. Therefore I decided to use these keys as a target for remapping. Now my modifier keys does something useful while tapping, especially in Atom.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Physical key&lt;/th&gt;
+      &lt;th&gt;Tap&lt;/th&gt;
+      &lt;th&gt;Action in Atom&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Left Shift&lt;/td&gt;
+      &lt;td&gt;F12&lt;/td&gt;
+      &lt;td&gt;expand-region&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Left Command&lt;/td&gt;
+      &lt;td&gt;F13&lt;/td&gt;
+      &lt;td&gt;toggle-line-comments&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Left Alt&lt;/td&gt;
+      &lt;td&gt;F14&lt;/td&gt;
+      &lt;td&gt;wrap-with-abbreviation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Right Ctrl&lt;/td&gt;
+      &lt;td&gt;F15&lt;/td&gt;
+      &lt;td&gt;outdent-selected-rows&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Right Command&lt;/td&gt;
+      &lt;td&gt;F16&lt;/td&gt;
+      &lt;td&gt;indent-selected-rows&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Right Shift&lt;/td&gt;
+      &lt;td&gt;F17&lt;/td&gt;
+      &lt;td&gt;preview&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Combine these keys with regular modiefier keys, and you have a whole lot of new keyboard-shortcuts you can easily use. &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctr+Command(tap)&lt;/code&gt; will now actually be a command, and vise-versa, &lt;code class=&quot;highlighter-rouge&quot;&gt;Command+Ctrl(tap)&lt;/code&gt; will be wholly different.&lt;/p&gt;
+
+&lt;h3 id=&quot;missing-control-key&quot;&gt;Missing Control-key&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt;-key is not to be found on the left side of my current keyboard, which I find frustrating. For this reason, I remapped my &lt;code class=&quot;highlighter-rouge&quot;&gt;§&lt;/code&gt;-key to be &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt; when held, and when tapped it functions as a regular &lt;code class=&quot;highlighter-rouge&quot;&gt;§&lt;/code&gt;-key. Other alternatives would be using the &lt;code class=&quot;highlighter-rouge&quot;&gt;Caps-lock&lt;/code&gt; as &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt;, But I have other uses for that.&lt;/p&gt;
+
+&lt;h2 id=&quot;special-keys-and-compromises&quot;&gt;Special keys and compromises&lt;/h2&gt;
+
+&lt;p&gt;To accommodate the need in Norwegian for special characters, like &lt;code class=&quot;highlighter-rouge&quot;&gt;æ, å, ø&lt;/code&gt;, I use a small toggle on the keyboard. Under the hood, I have set some keys whose placements matches the Norwegian-layout to output that character, but only when the &lt;code class=&quot;highlighter-rouge&quot;&gt;Macro&lt;/code&gt;-function on the keyboard is enabled.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Physical key&lt;/th&gt;
+      &lt;th&gt;Macro&lt;/th&gt;
+      &lt;th&gt;Output&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;’&lt;/td&gt;
+      &lt;td&gt;alt-‘&lt;/td&gt;
+      &lt;td&gt;æ&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;shift-‘&lt;/td&gt;
+      &lt;td&gt;alt-‘&lt;/td&gt;
+      &lt;td&gt;Æ&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;;&lt;/td&gt;
+      &lt;td&gt;alt-o&lt;/td&gt;
+      &lt;td&gt;ø&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;shift-;&lt;/td&gt;
+      &lt;td&gt;alt-o&lt;/td&gt;
+      &lt;td&gt;Ø&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\&lt;/td&gt;
+      &lt;td&gt;alt-a&lt;/td&gt;
+      &lt;td&gt;å&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;shift-\&lt;/td&gt;
+      &lt;td&gt;alt-a&lt;/td&gt;
+      &lt;td&gt;Å&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;But isn’t this just the same as changing the keyboard layout to Norwegian in the OS? Well, no. The Norwegian keyboard layout has quite a few differences compared to the US-layout. It switches many of the characters on the keyboard, which makes for unnecessary adjustments if one is using two layouts. In my view, it is better to just switch a few of the most needed keys, instead of all of them.&lt;/p&gt;
+
+&lt;p&gt;Of course, when the macro is enabled, I am unable to use their normal key. I find this an okay compromise. With just a tap, I can disable the &lt;code class=&quot;highlighter-rouge&quot;&gt;Macro&lt;/code&gt;–function, and I can again access those keys. After all, when I am writing Norwegian, I am generally not writing code, but emails, or chatting and such. I can, for the most part, do without those keys then.&lt;/p&gt;
+
+&lt;p&gt;In an upcoming post, I will write how I reassigned the keys. If you are too eager to wait, and you are using macOS Sierra or later, my number one tip would be to check out &lt;a href=&quot;https://github.com/tekezo/Karabiner-Elements&quot;&gt;Karabiner-Elements&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="hardware" /><category term="keyboard" /><category term="productivity" /><category term="tips" /><summary type="html">Remapping the keyboard is highly useful, especially if you find that there currently is not enough keys on your keyboard. Instead of slaving though remembering cumbersome key-combinations to get your work done, why not add some extra keys on your keyboard? Of course, we are not physically adding keys, but using the ones we have a bit smarter.</summary></entry><entry><title type="html">The weird and productive keyboard</title><link href="http://localhost:4000/hardware/2017/03/14/Advantage.html" rel="alternate" type="text/html" title="The weird and productive keyboard" /><published>2017-03-14T22:47:20+01:00</published><updated>2017-03-14T22:47:20+01:00</updated><id>http://localhost:4000/hardware/2017/03/14/Advantage</id><content type="html" xml:base="http://localhost:4000/hardware/2017/03/14/Advantage.html">&lt;p&gt;For quite some time I’ve been using just regular flat keyboards, mostly because as a student I used my laptop a lot. When working on my desktop I wanted a similar keyboard, so I went with a flat Logitech-keyboard.&lt;/p&gt;
+
+&lt;p&gt;However, I did not realise how the non-existing ergonomics of keyboards like these were until I started coding again. This fact was not helped by the fact that the Norwegian-keyboard-layout is not very programmer-friendly. To make a simple square-brace, I would do &lt;code class=&quot;highlighter-rouge&quot;&gt;Shift+8&lt;/code&gt;, instead of just hitting the dedicated key.  This holds true for a number of keys. Of course, we do have a dedicated &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;@&lt;/code&gt; -keys for some reason, but I think we can all agree that the US-keyboard is more optimized for programming than the Norwegian version.&lt;/p&gt;
+
+&lt;p&gt;I tried switching to the US-layout, but as I was writing quite a bit of Norwegian too, this was not an optimal solution. Of course, I could change layouts on the fly, but there are a lot of the keys that change between layouts, this neither was a reliable option.&lt;/p&gt;
+
+&lt;p&gt;For a while, I tried to remap some keys to make this easier. &lt;code class=&quot;highlighter-rouge&quot;&gt;Caps-lock&lt;/code&gt; is a pretty useless key, so I used that in combination with other keys for brackets and such. I remapped all my modifier keys to behave differently while just tapping them so that I could tap &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt; for parentheses, and also do stuff like &lt;code class=&quot;highlighter-rouge&quot;&gt;Shift-Ctrl&lt;/code&gt; (hold shift, tap Ctrl) to close parentheses.&lt;/p&gt;
+
+&lt;p&gt;I was happy for a while, but after spending hours coding, I noticed some beginning fatigue in my hands. No pain yet, but I knew I needed to do something before I got any lasting damage. The flat keyboard would have to go.&lt;/p&gt;
+
+&lt;h2 id=&quot;advantage&quot;&gt;Advantage&lt;/h2&gt;
+
+&lt;p&gt;After poking around the internet, I found a weird looking keyboard made by a company called Kinesis. The Advantage 2. A huge, split keyboard with contoured wells for my hands, with modifier keys for both my thumbs. In all these years I found it strange that the strongest finger (albeit not technically a finger) would be assigned only to hitting the spacebar. Now it would do many different tasks. This was a strange new world.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/advantage2.jpg&quot;&gt;
+  &lt;img src=&quot;/images/advantage2-800.jpg&quot; alt=&quot;Kinesis Advantage2&quot; srcset=&quot;            /images/advantage2-1600.jpg 1600w,            /images/advantage2-800.jpg 800w,            /images/advantage2-400.jpg 400w,            /images/advantage2-300.jpg 300w,            /images/advantage2-100.jpg 100w,    &quot; sizes=&quot;(min-width: 800px) 80vw, 100vw&quot; class=&quot;center&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- ### First impressions: Terrible, utterly terrible --&gt;
+
+&lt;p&gt;The keyboard felt huge but surprisingly light. So many keys have been moved around. I decided to also change to US-layout, while I’m at it. It meant I would have to spend more time adjusting.&lt;/p&gt;
+
+&lt;p&gt;My typing speed was horrible. I couldn’t understand how I was ever going to relearn how to type. I kept hitting the wrong key or two keys at once. Why was I hitting two keys? Well, a regular keyboard does not arrange their keys in straight rows, but semi-diagonally. But here, since the keys are curved, I guess they figured it was better to keep the keys in straight rows.&lt;/p&gt;
+
+&lt;p&gt;Writing emails was a pain. I was just about done with this keyboard.&lt;/p&gt;
+
+&lt;h3 id=&quot;no-more-fatigue&quot;&gt;No more fatigue&lt;/h3&gt;
+
+&lt;p&gt;It has been a few days. The fatigue was gone. And I was starting to get used to the strange beast of a keyboard. Even though my writing speed was still much slower than before, it took a lot less effort. Now it feels smooth. I hardly ever move my hands, nor do I stretch my fingers. My keys are right where I need them to be.&lt;/p&gt;
+
+&lt;p&gt;My writing speed is improving every day, to the point where I am not concerned about not writing fast enough. After all, a programmer doesn’t actually need to write fast, but smart. And if I need to write quicker, I am sure that in the coming weeks, I will be a lot faster than I ever was with my flat keyboard. Of course, I am comparing two very different keyboards here, at very different prices and targeted at different audiences.&lt;/p&gt;
+
+&lt;h3 id=&quot;special-features&quot;&gt;Special features&lt;/h3&gt;
+
+&lt;p&gt;The keyboard has some more advanced features. It can be programmed on the keyboard itself so that if you switch computers, your layout, settings and macros are with you. You can even store snippets on there, for often typed phrases. You can change your layout from Qwerty to Dworak with the push of a button, enable or disable a &lt;em&gt;click&lt;/em&gt;-tone for you key-presses, to let you know when a key-press is detected to hinder bottoming the keys.&lt;/p&gt;
+
+&lt;p&gt;All of these settings and more can be set either on the keyboard as explained, but also from your computer. The keyboard actually shows up as a removable disk, with a few folders and files. Here you can do firmware updates without any installation files at all. Nothing is installed on your computer. Changing of settings is done through editing regular text files. You could create multiple profiles for your layouts if you were to need that.&lt;/p&gt;
+
+&lt;p&gt;I do like that I can change the keys and settings from a regular text file, very programmer-friendly.&lt;/p&gt;
+
+&lt;p&gt;No software required (or even supplied), means I can just take my keyboard and plug it into any computer, and all my settings, remapped keys, snippets and such are right there with me. No pesky notifications about updates waiting to install, at least for the keyboard. I never understood why so many products insist on installing some proprietary software just to manage their product.&lt;/p&gt;
+
+&lt;p&gt;The keyboard also comes with some extra keycaps, so you can PC- or Mac modifier keys.&lt;/p&gt;
+
+&lt;h3 id=&quot;verdict&quot;&gt;Verdict&lt;/h3&gt;
+
+&lt;p&gt;I like this keyboard. It has only been a few weeks, and I am typing a lot more consistent than I used to, if not faster.&lt;/p&gt;
+
+&lt;p&gt;I do not like using other keyboards if I have to, but I find that I am typing faster on them also. I think that is because the Advantage forces you to keep your hands where they should be, your index fingers naturally fall on F and J as a professional typist would have it.&lt;/p&gt;
+
+&lt;p&gt;I don’t use my mouse as much, and I am a lot quicker than I was before. Because the modifier keys are so much more accessible and closer to my hands, doing key-combos are easier. Before I was mostly just doing combos with my left-hand. This I believe was because the flat little keyboard was not wide enough so my hands would not naturally rest at writing position. My hands were almost cramped together. See the image below for a clear difference.&lt;/p&gt;
+
+&lt;!-- TODO: Insert picture of both keyboards with hands on them, --&gt;
+
+&lt;h2 id=&quot;beyond&quot;&gt;Beyond&lt;/h2&gt;
+&lt;p&gt;Some modifications are needed. I would like a &lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl&lt;/code&gt;-key on the left, as well as a &lt;code class=&quot;highlighter-rouge&quot;&gt;alt&lt;/code&gt;-key on the right. I can see that there really isn’t room to add them, without needing to stretch my fingers a lot. Therefore, it is not as easy as just remapping the keys. I’ll have to do something a bit more clever. I’ll dive into this in my next post, as well as how to remap keys, not just for this keyboard, but for any keyboard.&lt;/p&gt;
+
+&lt;p&gt;You can find the post here: &lt;a href=&quot;/hardware/2017/03/16/Key-modifications.html&quot;&gt;Keyboard remapping gone mad&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="hardware" /><category term="keyboard" /><category term="productivity" /><category term="tips" /><summary type="html">For quite some time I’ve been using just regular flat keyboards, mostly because as a student I used my laptop a lot. When working on my desktop I wanted a similar keyboard, so I went with a flat Logitech-keyboard.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/advantage2.jpg" /></entry></feed>
