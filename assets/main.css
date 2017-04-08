@@ -518,10 +518,14 @@ video {
   max-width: 100%; }
 
 .center {
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
 
 iframe {
   max-width: 100%; }
+
+.figure {
+  padding-bottom: 1ex; }
 
 .float-right {
   float: right;
@@ -698,3 +702,21 @@ ul.tags > li > a {
 .social-icons .fa-twitter,
 .social-icons .fa-twitter-square {
   color: #32CCFE; }
+
+.front-image {
+  min-height: 100px;
+  height: 20vw; }
+
+img {
+  max-height: 100%; }
+
+figure {
+  text-align: center; }
+
+figure img {
+  vertical-align: top; }
+
+figure figcaption {
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 80%; }

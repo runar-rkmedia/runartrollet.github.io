@@ -1,5 +1,171 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-08T12:51:22+02:00</updated><id>http://localhost:4000/</id><title type="html">Runar Kristoffersen</title><subtitle>A work-in-progress portfolio for Runar Kristoffersen, electrician by trade, computer- and sciencegeek by desire.
-</subtitle><entry><title type="html">Keyboard remapping gone mad</title><link href="http://localhost:4000/hardware/2017/03/16/Key-modifications.html" rel="alternate" type="text/html" title="Keyboard remapping gone mad" /><published>2017-03-16T22:47:20+01:00</published><updated>2017-03-16T22:47:20+01:00</updated><id>http://localhost:4000/hardware/2017/03/16/Key-modifications</id><content type="html" xml:base="http://localhost:4000/hardware/2017/03/16/Key-modifications.html">&lt;p&gt;Remapping the keyboard is highly useful, especially if you find that there currently is not enough keys on your keyboard. Instead of slaving though remembering cumbersome key-combinations to get your work done, why not add some extra keys on your keyboard? Of course, we are not physically adding keys, but using the ones we have a bit smarter.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-08T14:32:54+02:00</updated><id>http://localhost:4000/</id><title type="html">Runar Kristoffersen</title><subtitle>A work-in-progress portfolio for Runar Kristoffersen, electrician by trade, computer- and sciencegeek by desire.
+</subtitle><entry><title type="html">Key-configuration</title><link href="http://localhost:4000/hardware/2017/04/08/Karabiner.html" rel="alternate" type="text/html" title="Key-configuration" /><published>2017-04-08T12:47:20+02:00</published><updated>2017-04-08T12:47:20+02:00</updated><id>http://localhost:4000/hardware/2017/04/08/Karabiner</id><content type="html" xml:base="http://localhost:4000/hardware/2017/04/08/Karabiner.html">&lt;p&gt;This is my third post in the series concerning keyboards and increasing the productivity with them. If you haven’t read the others yet, here are some links to them:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/hardware/2017/03/14/Advantage.html&quot;&gt;The weird and productive keyboard&lt;/a&gt;, my recommended keyboard for anybody wanting to increase their productivity, comfort level, or simply how to write the correct way.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/hardware/2017/03/16/Key-modifications.html&quot;&gt;Keyboard remapping gone mad&lt;/a&gt;, a post going through some ideas for how the keyboard can be remapped to get more functionality while at the same time avoiding painful key-combinations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;video-showcasing-some-of-the-remappings&quot;&gt;Video showcasing some of the remappings&lt;/h2&gt;
+
+&lt;video width=&quot;960&quot; controls=&quot;&quot;&gt;
+  &lt;source src=&quot;/media/karabiner.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;source src=&quot;/media/karabiner.webm&quot; type=&quot;video/mp4&quot; /&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+
+&lt;p&gt;In this post, I will dive into the technical aspect of how to remap the keyboard. Many software lets you do this, but most will not do this at a low enough level to actually remap the keys. Some just try it’s best to cancel out the effect of the key you want it to remap, and then emulating the target key.&lt;/p&gt;
+
+&lt;h2 id=&quot;karabiner-to-the-rescue&quot;&gt;Karabiner to the rescue&lt;/h2&gt;
+
+&lt;p&gt;As a disclaimer, I would just like to point out that I am not sponsored or in any way involved with Karabiner. I simply recommend it, as many others do.&lt;/p&gt;
+
+&lt;p&gt;Karabiner has a history of doing this remapping at the level we need to do our remapping of the modifier keys, so that the OS doesn’t even see what key you pressed physically, but the key you tell it to see through Karabiner.&lt;/p&gt;
+
+&lt;p&gt;What makes Karabiner extra useful, is that you can not only configure it through a graphical user interface, but also by just editing a &lt;code class=&quot;highlighter-rouge&quot;&gt;.json&lt;/code&gt;-file. This is great for those who are used to editing text files, as most developers and programmers are.&lt;/p&gt;
+
+&lt;h3 id=&quot;macos-sierra&quot;&gt;macOS Sierra&lt;/h3&gt;
+
+&lt;p&gt;macOS Sierra brought some changes to the generic keyboard and mouse drivers, and this broke earlier versions of Karabiner. Luckily, the developers are currently rewriting Karabiner, which is now called Karabiner Elements, to work with the updated OS.&lt;/p&gt;
+
+&lt;p&gt;New features are added quite often, and it is very stable. I have not had a single issue with the program at all.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Because Karabiner Elements is not yet released and actively worked on, big changes are happening fast.&lt;/p&gt;
+
+  &lt;p&gt;I will keep this page updated as progress continues so that the correct information is always available here.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;downloading-from-the-correct-fork&quot;&gt;Downloading from the correct fork&lt;/h2&gt;
+
+&lt;p&gt;The community is also constantly working on it, bringing in their favourite features. One of the features we will be needing has not yet been merged into the main repository, but I suspect it will very soon. This feature is the ‘Standalone keys’, which we need to create a &lt;code class=&quot;highlighter-rouge&quot;&gt;hyper&lt;/code&gt;-key, or another modifier key.&lt;/p&gt;
+
+&lt;p&gt;The version we need is &lt;a href=&quot;https://github.com/wwwjfy/Karabiner-Elements/releases&quot;&gt;wwwjfy-s latest release&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Before we continue, download the latest release(0.92) as of writing, and install it.&lt;/p&gt;
+
+&lt;h2 id=&quot;configuring-karabiner-elements&quot;&gt;Configuring Karabiner-Elements&lt;/h2&gt;
+
+&lt;p&gt;Looking back at my previous post about what remapping I wrote that there were a few different kinds of remappings I found the most helpful, and my recommended setup.&lt;/p&gt;
+
+&lt;p&gt;Not all features have made it into the GUI yet, so configuring everything requires that we jump into the &lt;code class=&quot;highlighter-rouge&quot;&gt;.json&lt;/code&gt;-file. But don’t worry, the configuration is easy.&lt;/p&gt;
+
+&lt;p&gt;You can find the file in &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.config/karabiner/karabiner.json&lt;/code&gt;. Open the file in your favourite editor. For a look at my complete config-file, scroll down to the bottom of this post.&lt;/p&gt;
+
+&lt;h3 id=&quot;hyper-key&quot;&gt;Hyper-key&lt;/h3&gt;
+
+&lt;p&gt;To remap the &lt;code class=&quot;highlighter-rouge&quot;&gt;caps-lock&lt;/code&gt; into another working modifier-key, which often is called the &lt;code class=&quot;highlighter-rouge&quot;&gt;hyper&lt;/code&gt;-key, we need to add just a few lines into the config. But as I mentioned, macOS does not have a &lt;code class=&quot;highlighter-rouge&quot;&gt;hyper&lt;/code&gt;-key, so we emulate on with a combination of all modifier keys. That would be &lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + shift + option + cmd&lt;/code&gt;, a crazy key-combination. I highly doubt you actually are using that, and if you are, please stop it before the pain sets in.&lt;/p&gt;
+
+&lt;p&gt;So, to redefine &lt;code class=&quot;highlighter-rouge&quot;&gt;caps_lock&lt;/code&gt; into &lt;code class=&quot;highlighter-rouge&quot;&gt;hyper&lt;/code&gt;, we add this to the config:&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;one_to_many_mappings&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;caps_lock&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_control&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_shift&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_option&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_command&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;tapping-modifier-key-for-f-key&quot;&gt;Tapping modifier-key for F-key&lt;/h2&gt;
+
+&lt;p&gt;Tapping a key is different that holding it. Modifier keys are by default only useful for holding and then applying a key-combination. On their own, they do nothing. But we can add functionality when tapping the modifier keys to do something a lot more useful. We can also do combinations, for instance holding &lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl&lt;/code&gt; and tapping &lt;code class=&quot;highlighter-rouge&quot;&gt;cmd&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The target-keys you need here should be unused keys. My keyboard does not have F-keys beyond F13, so that means I can use these keys are a target. You can, of course, configure this to any key, but really, it should be a key that is not used at all.&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;standalone_keys&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;left_shift&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;f12&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;left_command&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;f13&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;left_option&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;f14&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;right_control&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;f15&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;right_command&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;f16&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;right_shift&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;f17&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;caps_lock&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;f18&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;extra-ctrl-and-option-keys&quot;&gt;Extra ctrl and option keys&lt;/h2&gt;
+
+&lt;p&gt;Since I want extra modifier keys, available on both sides of my keyboard, I did the same technique as for tapping modifier keys but applied it to a regular key.&lt;/p&gt;
+
+&lt;p&gt;Tapping &lt;code class=&quot;highlighter-rouge&quot;&gt;§&lt;/code&gt; now behaves as normal, but holding it will now be &lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl&lt;/code&gt;. I also set &lt;code class=&quot;highlighter-rouge&quot;&gt;]&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;option&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;simple_modifications&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;close_bracket&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;right_alt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;grave_accent_and_tilde&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_control&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;standalone_keys&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;close_bracket&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;close_bracket&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;grave_accent_and_tilde&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;grave_accent_and_tilde&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-full-config&quot;&gt;The full config&lt;/h2&gt;
+
+&lt;p&gt;This is my whole config-file for Karabiner-Elements. It holds a few more values than what was mentioned above, but I am sure you can figure those out easily.&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;global&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;check_for_updates_on_startup&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;show_in_menu_bar&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;show_profile_name_in_menu_bar&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;profiles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;devices&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;fn_function_keys&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;f1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;display_brightness_decrement&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;f10&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mute&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;f11&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;volume_decrement&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;f12&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;volume_increment&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;f2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;display_brightness_increment&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;f3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mission_control&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;f4&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;launchpad&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;f5&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;illumination_decrement&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;f6&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;illumination_increment&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;f7&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;rewind&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;f8&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;play_or_pause&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;f9&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;fastforward&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Default profile&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;one_to_many_mappings&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;scroll_lock&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_control&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_shift&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_option&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_command&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;selected&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;simple_modifications&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;close_bracket&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;right_alt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;grave_accent_and_tilde&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left_control&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;standalone_keys&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;close_bracket&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;close_bracket&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;grave_accent_and_tilde&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;grave_accent_and_tilde&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;left_shift&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;f12&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;left_command&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;f13&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;left_option&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;f14&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;right_control&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;f15&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;right_command&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;f16&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;right_shift&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;f17&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;scroll_lock&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;f18&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;virtual_hid_keyboard&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;caps_lock_delay_milliseconds&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;keyboard_type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;iso&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;standalone_keys_delay_milliseconds&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;180&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="hardware" /><category term="keyboard" /><category term="productivity" /><category term="tips" /><summary type="html">This is my third post in the series concerning keyboards and increasing the productivity with them. If you haven’t read the others yet, here are some links to them:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/Karabiner.png" /></entry><entry><title type="html">Keyboard remapping gone mad</title><link href="http://localhost:4000/hardware/2017/03/16/Key-modifications.html" rel="alternate" type="text/html" title="Keyboard remapping gone mad" /><published>2017-03-16T22:47:20+01:00</published><updated>2017-03-16T22:47:20+01:00</updated><id>http://localhost:4000/hardware/2017/03/16/Key-modifications</id><content type="html" xml:base="http://localhost:4000/hardware/2017/03/16/Key-modifications.html">&lt;p&gt;Remapping the keyboard is highly useful, especially if you find that there currently is not enough keys on your keyboard. Instead of slaving though remembering cumbersome key-combinations to get your work done, why not add some extra keys on your keyboard? Of course, we are not physically adding keys, but using the ones we have a bit smarter.&lt;/p&gt;
 
 &lt;p&gt;Like on your touch phone or pad, you can tap, hold, swipe as you navigate through the interface. Yet, you are only interacting with a single surface.&lt;/p&gt;
 
@@ -175,8 +341,28 @@
 
 &lt;p&gt;I don’t use my mouse as much, and I am a lot quicker than I was before. Because the modifier keys are so much more accessible and closer to my hands, doing key-combos are easier. Before I was mostly just doing combos with my left-hand. This I believe was because the flat little keyboard was not wide enough so my hands would not naturally rest at writing position. My hands were almost cramped together. See the image below for a clear difference.&lt;/p&gt;
 
-&lt;!-- TODO: Insert picture of both keyboards with hands on them, --&gt;
+&lt;figure&gt;
 
+
+
+
+
+
+&lt;a href=&quot;/images/hands_on_Logi.jpg&quot;&gt;
+  &lt;img src=&quot;/images/hands_on_Logi-800.jpg&quot; alt=&quot;Image of Logitech-keyboard in use&quot; srcset=&quot;            /images/hands_on_Logi-1600.jpg 1600w,            /images/hands_on_Logi-800.jpg 800w,            /images/hands_on_Logi-400.jpg 400w,            /images/hands_on_Logi-300.jpg 300w,            /images/hands_on_Logi-100.jpg 100w,    &quot; sizes=&quot;(min-width: 800px) 50vw&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+
+
+
+
+
+
+
+&lt;a href=&quot;/images/hands_on_Advantage2.jpg&quot;&gt;
+  &lt;img src=&quot;/images/hands_on_Advantage2-800.jpg&quot; alt=&quot;Image of Advantage2 in use&quot; srcset=&quot;            /images/hands_on_Advantage2-1600.jpg 1600w,            /images/hands_on_Advantage2-800.jpg 800w,            /images/hands_on_Advantage2-400.jpg 400w,            /images/hands_on_Advantage2-300.jpg 300w,            /images/hands_on_Advantage2-100.jpg 100w,    &quot; sizes=&quot;(min-width: 800px) 50vw&quot; class=&quot;&quot; /&gt;
+&lt;/a&gt;
+
+  &lt;figcaption&gt;Comparison of usergript on the Advantage2 vs a generic keyboard. &lt;br /&gt;Notice the much wider grip, matching my shoulder-width.&lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h2 id=&quot;beyond&quot;&gt;Beyond&lt;/h2&gt;
 &lt;p&gt;Some modifications are needed. I would like a &lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl&lt;/code&gt;-key on the left, as well as a &lt;code class=&quot;highlighter-rouge&quot;&gt;alt&lt;/code&gt;-key on the right. I can see that there really isn’t room to add them, without needing to stretch my fingers a lot. Therefore, it is not as easy as just remapping the keys. I’ll have to do something a bit more clever. I’ll dive into this in my next post, as well as how to remap keys, not just for this keyboard, but for any keyboard.&lt;/p&gt;
 
