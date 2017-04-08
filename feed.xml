@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-08T14:35:37+02:00</updated><id>http://localhost:4000/</id><title type="html">Runar Kristoffersen</title><subtitle>A work-in-progress portfolio for Runar Kristoffersen, electrician by trade, computer- and sciencegeek by desire.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-08T14:39:08+02:00</updated><id>http://localhost:4000/</id><title type="html">Runar Kristoffersen</title><subtitle>A work-in-progress portfolio for Runar Kristoffersen, electrician by trade, computer- and sciencegeek by desire.
 </subtitle><entry><title type="html">Key-configuration</title><link href="http://localhost:4000/hardware/2017/04/08/Karabiner.html" rel="alternate" type="text/html" title="Key-configuration" /><published>2017-04-08T12:47:20+02:00</published><updated>2017-04-08T12:47:20+02:00</updated><id>http://localhost:4000/hardware/2017/04/08/Karabiner</id><content type="html" xml:base="http://localhost:4000/hardware/2017/04/08/Karabiner.html">&lt;p&gt;This is my third post in the series concerning keyboards and increasing the productivity with them. If you haven’t read the others yet, here are some links to them:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -360,8 +360,8 @@
 
 
 
-&lt;a href=&quot;/images/hands_on_Advantage2.jpg&quot;&gt;
-  &lt;img src=&quot;/images/hands_on_Advantage2-800.jpg&quot; alt=&quot;Image of Advantage2 in use&quot; srcset=&quot;            /images/hands_on_Advantage2-1600.jpg 1600w,            /images/hands_on_Advantage2-800.jpg 800w,            /images/hands_on_Advantage2-400.jpg 400w,            /images/hands_on_Advantage2-300.jpg 300w,            /images/hands_on_Advantage2-100.jpg 100w,    &quot; sizes=&quot;(min-width: 800px) 50vw&quot; class=&quot;&quot; /&gt;
+&lt;a href=&quot;/images/hands_on_advantage2.jpg&quot;&gt;
+  &lt;img src=&quot;/images/hands_on_advantage2-800.jpg&quot; alt=&quot;Image of Advantage2 in use&quot; srcset=&quot;            /images/hands_on_advantage2-1600.jpg 1600w,            /images/hands_on_advantage2-800.jpg 800w,            /images/hands_on_advantage2-400.jpg 400w,            /images/hands_on_advantage2-300.jpg 300w,            /images/hands_on_advantage2-100.jpg 100w,    &quot; sizes=&quot;(min-width: 800px) 50vw&quot; class=&quot;&quot; /&gt;
 &lt;/a&gt;
 
   &lt;figcaption&gt;Comparison of usergript on the Advantage2 vs a generic keyboard. &lt;br /&gt;Notice the much wider grip, matching my shoulder-width.&lt;/figcaption&gt;&lt;/figure&gt;
