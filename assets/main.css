@@ -659,3 +659,13 @@ float-right {
 
   .project-description {
     font-size: 14px; } }
+ul.tags {
+  display: inline; }
+
+ul.tags > li {
+  display: inline; }
+  ul.tags > li:not(:last-child):after {
+    content: ','; }
+
+ul.tags > li > a {
+  color: #828282; }
