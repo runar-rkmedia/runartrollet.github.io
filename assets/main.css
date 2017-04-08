@@ -669,3 +669,32 @@ ul.tags > li {
 
 ul.tags > li > a {
   color: #828282; }
+
+.share-buttons {
+  justify-content: space-between; }
+
+.share-buttons > a {
+  font-size: 1.8rem;
+  font-size: calc(1.2vw + 1.8rem); }
+  .share-buttons > a:not(:last-child) {
+    margin-right: 10px; }
+
+.social-icons .fa-facebook,
+.social-icons .fa-facebook-square {
+  color: #3C599F; }
+
+.social-icons .fa-github,
+.social-icons .fa-github-alt,
+.social-icons .fa-github-square {
+  color: #070709; }
+
+.social-icons .fa-google-plus-square {
+  color: #CF3D2E; }
+
+.social-icons .fa-linkedin,
+.social-icons .fa-linkedin-square {
+  color: #0085AE; }
+
+.social-icons .fa-twitter,
+.social-icons .fa-twitter-square {
+  color: #32CCFE; }
