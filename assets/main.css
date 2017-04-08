@@ -678,10 +678,13 @@ ul.tags > li > a {
   justify-content: space-between; }
 
 .share-buttons > a {
+  text-decoration: none;
   font-size: 1.8rem;
   font-size: calc(1.2vw + 1.8rem); }
   .share-buttons > a:not(:last-child) {
     margin-right: 10px; }
+  .share-buttons > a:hover {
+    color: #828282; }
 
 .social-icons .fa-facebook,
 .social-icons .fa-facebook-square {
@@ -694,6 +697,12 @@ ul.tags > li > a {
 
 .social-icons .fa-google-plus-square {
   color: #CF3D2E; }
+
+.social-icons .fa-stumbleupon-circle {
+  color: #f74425; }
+
+.social-icons .fa-reddit-square {
+  color: #FF5700; }
 
 .social-icons .fa-linkedin,
 .social-icons .fa-linkedin-square {
