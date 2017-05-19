@@ -13,6 +13,7 @@ module.exports = function(grunt) {
             pictures: {
                 options: {
                     engine: 'im',
+                    newFilesOnly: true,
                     sizes: [{
                         name: '100',
                         height: 100,
@@ -37,14 +38,15 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    src: ['*.{gif,jpg,png}'],
-                    cwd: 'images_src/',
+                    src: ['**/*.{gif,jpg,png,svg}', '!fixed/**', '!icons/**'],
+                    cwd: "images_src/",
                     dest: 'images/'
                 }]
             },
             icons: {
                 options: {
                     engine: 'im',
+                    newFilesOnly: true,
                     sizes: [{
                         name: '100',
                         height: 100,
@@ -85,7 +87,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     src: ['*.{gif,jpg,png}'],
-                    cwd: 'images_src/icons/',
+                    cwd: "images_src/icons",
                     dest: 'images/'
                 }]
             },
@@ -108,38 +110,24 @@ module.exports = function(grunt) {
         },
 
         /* Copy the "fixed" images that don't go through processing into the images/directory */
-        copy: {
-            fixed: {
+        // Also copy the original file, if people are interested
+        sync: {
+            pictures: {
                 files: [{
-                    expand: true,
-                    src: 'images_src/fixed/*.{gif,jpg,png,svg}',
-                    flatten: true,
-                    dest: 'images/fixed'
-                }]
-            },
-            dev: {
-                files: [{
-                    expand: true,
-                    src: 'images_src/*.{gif,jpg,png}',
-                    flatten: true,
+                    src: ['**/*.{gif,jpg,png,svg}'],
+                    cwd: "images_src/",
                     dest: 'images/'
                 }]
-            },
-            icons: {
-                files: [{
-                    expand: true,
-                    src: 'images_src/icons/*.{gif,jpg,png}',
-                    flatten: true,
-                    dest: 'images/'
-                }]
-            },
-        },
+            }
+        }
     });
 
     grunt.loadNpmTasks('grunt-responsive-images');
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-mkdir');
-    grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);
+    grunt.loadNpmTasks('grunt-sync');
+    grunt.loadNpmTasks('grunt-newer');
+    grunt.registerTask('default', [
+        'sync',
+        'responsive_images'
+    ]);
 
 };
