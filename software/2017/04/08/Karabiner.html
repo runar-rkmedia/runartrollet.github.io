@@ -83,7 +83,7 @@
                             <a class="page-link " href="/about/">About</a>
                         
                     
-                </div>
+                </div!>
             </div>
         </nav>
 
@@ -98,7 +98,11 @@
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">Key-configuration</h1>
-    <pdivclass="post-meta"><time datetime="2017-04-08T12:47:20+02:00" itemprop="datePublished">Apr 8, 2017</time>
+    <pdivclass="post-meta">
+    First published: <time datetime="2017-04-08T12:47:20+02:00" itemprop="datePublished">Apr 8, 2017</time>
+    <br>Last modified:
+    <time datetime="2017-06-30T21:19:59+02:00" itemprop="datePublished">Jun 30, 2017</time>
+    
     <!-- Tags -->
     <ul class="tags">
     
@@ -142,6 +146,8 @@
 
 <p>What makes Karabiner extra useful, is that you can not only configure it through a graphical user interface, but also by just editing a <code class="highlighter-rouge">.json</code>-file. This is great for those who are used to editing text files, as most developers and programmers are.</p>
 
+<p>It is no also possible to share and import complex key-modification-rules, which is a very handy and welcome feature.</p>
+
 <h3 id="macos-sierra">macOS Sierra</h3>
 
 <p>macOS Sierra brought some changes to the generic keyboard and mouse drivers, and this broke earlier versions of Karabiner. Luckily, the developers are currently rewriting Karabiner, which is now called Karabiner Elements, to work with the updated OS.</p>
@@ -154,38 +160,28 @@
   <p>I will keep this page updated as progress continues so that the correct information is always available here.</p>
 </blockquote>
 
-<h2 id="downloading-from-the-correct-fork">Downloading from the correct fork</h2>
+<h2 id="downloading-karabiner-elements">Downloading Karabiner-Elements</h2>
 
-<p>The community is also constantly working on it, bringing in their favourite features. One of the features we will be needing has not yet been merged into the main repository, but I suspect it will very soon. This feature is the ‘Standalone keys’, which we need to create a <code class="highlighter-rouge">hyper</code>-key, or another modifier key.</p>
-
-<p>The version we need is <a href="https://github.com/wwwjfy/Karabiner-Elements/releases">wwwjfy-s latest release</a></p>
-
-<p>Before we continue, download the latest release(0.92) as of writing, and install it.</p>
+<p>You can download the application from <a href="https://github.com/tekezo/Karabiner-Elements/">Karabiner-Elements GitHub-Page</a>.</p>
 
 <h2 id="configuring-karabiner-elements">Configuring Karabiner-Elements</h2>
 
 <p>Looking back at my previous post about what remapping I wrote that there were a few different kinds of remappings I found the most helpful, and my recommended setup.</p>
 
-<p>Not all features have made it into the GUI yet, so configuring everything requires that we jump into the <code class="highlighter-rouge">.json</code>-file. But don’t worry, the configuration is easy.</p>
-
-<p>You can find the file in <code class="highlighter-rouge">~/.config/karabiner/karabiner.json</code>. Open the file in your favourite editor. For a look at my complete config-file, scroll down to the bottom of this post.</p>
+<p>Karabiner-Elements has made the process of sharing and importing comples key-modifications really easy. The rules can now be created and stored in simple <code class="highlighter-rouge">.json</code>-files, and imported via a regular internet-browser. A collection of rules is available from the developer’s site, and also inside the application itself.</p>
 
 <h3 id="hyper-key">Hyper-key</h3>
 
 <p>To remap the <code class="highlighter-rouge">caps-lock</code> into another working modifier-key, which often is called the <code class="highlighter-rouge">hyper</code>-key, we need to add just a few lines into the config. But as I mentioned, macOS does not have a <code class="highlighter-rouge">hyper</code>-key, so we emulate on with a combination of all modifier keys. That would be <code class="highlighter-rouge">ctrl + shift + option + cmd</code>, a crazy key-combination. I highly doubt you actually are using that, and if you are, please stop it before the pain sets in.</p>
 
-<p>So, to redefine <code class="highlighter-rouge">caps_lock</code> into <code class="highlighter-rouge">hyper</code>, we add this to the config:</p>
+<p>In the latest release, 0.91.5 as of writing, this configuration is included, and you can simply import it from the <em>Complex Modifications</em>-tab.</p>
 
-<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="s2">"one_to_many_mappings"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"caps_lock"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="s2">"left_control"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"left_shift"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"left_option"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"left_command"</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="err">,</span><span class="w">
-</span></code></pre>
-</div>
+<ul>
+  <li>Press <em>Add Rule</em></li>
+  <li>Press <em>Import more rules from the internet</em></li>
+</ul>
+
+<p>A list of rules should follow. One of them should be named <em>Change caps_lock key</em>. Simply press <em>Import</em>, and select the rules you would like to enable from that import. If you ever change your mind, just disable the rule.</p>
 
 <h2 id="tapping-modifier-key-for-f-key">Tapping modifier-key for F-key</h2>
 
@@ -193,94 +189,19 @@
 
 <p>The target-keys you need here should be unused keys. My keyboard does not have F-keys beyond F13, so that means I can use these keys are a target. You can, of course, configure this to any key, but really, it should be a key that is not used at all.</p>
 
-<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="s2">"standalone_keys"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"left_shift"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f12"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"left_command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f13"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"left_option"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f14"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"right_control"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f15"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"right_command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f16"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"right_shift"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f17"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"caps_lock"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f18"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
+<p>I have created a pull-request to get this configuration into the main server, so you can add them from there. In the meantime, you can import it directly from my site. Just follow link below and allow it to import into Karabiner.</p>
+
+<p><a href="karabiner://karabiner/assets/complex_modifications/import?url=http://localhost:4000/media/modifiers_to_f-keys.json">import-file for Karabiner-Elements</a></p>
 
 <h2 id="extra-ctrl-and-option-keys">Extra ctrl and option keys</h2>
 
 <p>Since I want extra modifier keys, available on both sides of my keyboard, I did the same technique as for tapping modifier keys but applied it to a regular key.</p>
 
-<p>Tapping <code class="highlighter-rouge">§</code> now behaves as normal, but holding it will now be <code class="highlighter-rouge">ctrl</code>. I also set <code class="highlighter-rouge">]</code> to <code class="highlighter-rouge">option</code>.</p>
+<p>You can do this on the <em>Simple Modifications</em>-tab inside the Karabiner-Elements-GUI, from the simple drop-down-menu. Or, if you are are more comfortable with pure text, in your <code class="highlighter-rouge">json</code>, add these elements.</p>
 
 <div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="s2">"simple_modifications"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"close_bracket"</span><span class="p">:</span><span class="w"> </span><span class="s2">"right_alt"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"close_bracket"</span><span class="p">:</span><span class="w"> </span><span class="s2">"right_option"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"grave_accent_and_tilde"</span><span class="p">:</span><span class="w"> </span><span class="s2">"left_control"</span><span class="w">
-</span><span class="p">}</span><span class="err">,</span><span class="w">
-</span><span class="s2">"standalone_keys"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"close_bracket"</span><span class="p">:</span><span class="w"> </span><span class="s2">"close_bracket"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"grave_accent_and_tilde"</span><span class="p">:</span><span class="w"> </span><span class="s2">"grave_accent_and_tilde"</span><span class="p">,</span><span class="w">
-</span><span class="err">}</span><span class="w">
-</span></code></pre>
-</div>
-
-<h2 id="the-full-config">The full config</h2>
-
-<p>This is my whole config-file for Karabiner-Elements. It holds a few more values than what was mentioned above, but I am sure you can figure those out easily.</p>
-
-<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nt">"global"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"check_for_updates_on_startup"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"show_in_menu_bar"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"show_profile_name_in_menu_bar"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nt">"profiles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"devices"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-            </span><span class="nt">"fn_function_keys"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"f1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"display_brightness_decrement"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"f10"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mute"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"f11"</span><span class="p">:</span><span class="w"> </span><span class="s2">"volume_decrement"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"f12"</span><span class="p">:</span><span class="w"> </span><span class="s2">"volume_increment"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"f2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"display_brightness_increment"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"f3"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mission_control"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"f4"</span><span class="p">:</span><span class="w"> </span><span class="s2">"launchpad"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"f5"</span><span class="p">:</span><span class="w"> </span><span class="s2">"illumination_decrement"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"f6"</span><span class="p">:</span><span class="w"> </span><span class="s2">"illumination_increment"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"f7"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rewind"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"f8"</span><span class="p">:</span><span class="w"> </span><span class="s2">"play_or_pause"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"f9"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fastforward"</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Default profile"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"one_to_many_mappings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"scroll_lock"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="s2">"left_control"</span><span class="p">,</span><span class="w">
-                    </span><span class="s2">"left_shift"</span><span class="p">,</span><span class="w">
-                    </span><span class="s2">"left_option"</span><span class="p">,</span><span class="w">
-                    </span><span class="s2">"left_command"</span><span class="w">
-                </span><span class="p">]</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"selected"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"simple_modifications"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"close_bracket"</span><span class="p">:</span><span class="w"> </span><span class="s2">"right_alt"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"grave_accent_and_tilde"</span><span class="p">:</span><span class="w"> </span><span class="s2">"left_control"</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"standalone_keys"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"close_bracket"</span><span class="p">:</span><span class="w"> </span><span class="s2">"close_bracket"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"grave_accent_and_tilde"</span><span class="p">:</span><span class="w"> </span><span class="s2">"grave_accent_and_tilde"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"left_shift"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f12"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"left_command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f13"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"left_option"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f14"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"right_control"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f15"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"right_command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f16"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"right_shift"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f17"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"scroll_lock"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f18"</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"virtual_hid_keyboard"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"caps_lock_delay_milliseconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"keyboard_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"iso"</span><span class="p">,</span><span class="w">
-                </span><span class="nt">"standalone_keys_delay_milliseconds"</span><span class="p">:</span><span class="w"> </span><span class="mi">180</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 </div>
